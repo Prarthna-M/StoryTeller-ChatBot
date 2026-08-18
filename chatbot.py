@@ -56,7 +56,7 @@ for message in st.session_state.chat_history:
 
 # LLM connection
 llm = ChatGroq(
-    model="openai/gpt-oss-120b",
+    model="groq/compound-mini",
     temperature=1.0
 )
 
