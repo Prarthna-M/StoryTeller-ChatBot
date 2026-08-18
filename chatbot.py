@@ -51,6 +51,8 @@ for message in st.session_state.chat_history:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
+st.write("Groq key loaded:", bool(os.getenv("GROQ_API_KEY")))
+
 # LLM connection
 llm = ChatGroq(
     model="llama-3.3-70b-versatile",
