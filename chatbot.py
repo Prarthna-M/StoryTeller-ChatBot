@@ -53,8 +53,8 @@ for message in st.session_state.chat_history:
 
 # LLM connection
 llm = ChatGroq(
-    model="llama-3.1-8b-instant",
-    temperature=1.8
+    model="llama-3.3-70b-versatile",
+    temperature=1.0
 )
 
 # get user input
